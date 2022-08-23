@@ -1,0 +1,40 @@
+
+:root {
+    
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+ 
+    --btn-txt-cl: #ffffff;
+    --main-txt-cl: #212121;
+    --hdr-cntcts-lst: #757575;
+    --accent-txt-cl: #2196f3;
+    
+    --porfolio-border-img: #eeeeee;
+    --logo-black: #000000;
+    --btn-prtfl: #f5f4fa;
+    --item-light: rgba(255, 255, 255, 0.6);
+    --sctn-sntnc: #2f303a;
+    --header-container-border: #ececec;
+    --accent-txt-hvr-fcs-cl: #188ce8;
+    --accent-social-link-light: #afb1b8;
+    --accent-social-link-dark: rgba(255, 255, 255, 0.1);
+    --clients-link: rgba(175, 177, 184, 1);
+
+    --linear-gradient: rgba(47, 48, 58, 0.4);
+
+    --backdrop: rgba(0, 0, 0, 0.2);
+    --overlay-bgr-clr: rgba(33, 150, 243, 0.9);
+    --border-footer-form: 1px solid rgba(255, 255, 255, 0.3);
+    --modal-border: rgba(33, 33, 33, 0.2);
+  
+    --box-shadow-porfolio-btn: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    --box-shadow-porfolio-list: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    --modal-btn-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    --indent: 30px;
+    --items: 3;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}

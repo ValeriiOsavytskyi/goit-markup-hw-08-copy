@@ -1,0 +1,33 @@
+.text-agreement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc (24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--hdr-cntcts-lst);
+
+    user-select: none;
+    text-underline-position: under;
+
+    &__link {
+            color: var(--accent-txt-cl);
+        }
+}
+
+.text-features {
+    line-height: calc(24 / 14);
+    color: var(--hdr-cntcts-lst);
+}
+
+.text-portfolio {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--hdr-cntcts-lst);
+}
+
+.text-overlay-portfolio {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    color: var(--btn-txt-cl);
+}

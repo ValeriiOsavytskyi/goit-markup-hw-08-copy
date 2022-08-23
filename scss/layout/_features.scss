@@ -1,0 +1,17 @@
+.features {
+    display: flex;
+    gap: 30px;
+
+    &__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 120px;
+            background-color: var(--btn-prtfl);
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+}
+
+

@@ -1,0 +1,99 @@
+.footer-section {
+    background-color: var(--sctn-sntnc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+
+        &__contacts {
+            margin-right: 70px;
+        }
+    
+        &__address {
+            font-style: inherit;
+        }
+    
+        &__link {
+            line-height: calc(24 / 14);
+
+            &--location {
+                color: var(--btn-txt-cl);
+                        }
+                    
+            &--contacts {
+                color: var(--item-light);
+                    
+                transition: color var(--transition);
+
+                &:hover,
+                &:focus {
+                        color: var(--accent-txt-cl);
+                    }
+
+                        }
+        }
+              
+    
+        &__item {
+            margin-bottom: 9px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        &__link--location {
+            margin-bottom: 9px;
+        }
+
+        &__social {
+            margin-right: auto;
+        }
+
+        &__social-subtittle {
+            margin-bottom: 20px;
+        }
+           
+        &__form {
+            display: block;
+            }
+        
+        &__form-subtittle {
+            margin-bottom: 20px;
+            }
+        
+        
+        &__form-input--email {
+            width: 358px;
+            padding: 15px;
+            padding-left: 16px;
+            border-radius: 4px;
+            border: var(--border-footer-form);
+            background-color: transparent;
+            margin-right: 12px;
+            color: var(--btn-txt-cl);
+            }
+        
+        &__form-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+        
+            position: relative;
+            }
+        
+        &__form-icon--send {
+            position: absolute;
+            bottom: 13px;
+            right: 28px;
+        
+            fill: var(--btn-txt-cl);
+            }
+}
+
+
+

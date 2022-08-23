@@ -1,0 +1,112 @@
+
+.header {
+    border-bottom: 1px solid var(--header-container-border);
+
+    &__container {
+            display: flex;
+        }
+    
+    &__nav {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+}
+
+
+
+.nav {
+    &__list {
+            display: flex;
+        }
+    
+    &__item {
+            /*display: flex;*/
+            padding-top: 32px;
+            padding-bottom: 32px;
+            align-items: center;
+    
+            margin-right: 50px;
+        }
+    
+    &__item:nth-last-child(1) {
+            margin-right: 0;
+        }
+    
+    &__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            cursor: pointer;
+    
+            position: relative;
+    
+            transition: color var(--transition);
+        }
+    
+    &__link--active {
+            color: var(--accent-txt-cl);
+        }
+    
+    &__link--active::after {
+            content: '';
+            position: absolute;
+            bottom: -36px;
+            left: 0px;
+    
+            display: block;
+            width: 100%;
+            height: 4px;
+    
+            border-radius: 4px;
+            background-color: var(--accent-txt-cl);
+        }
+    
+    &__link:hover,
+    &__link:focus {
+            color: var(--accent-txt-cl);
+        }
+}
+
+.contacts {}
+
+.contacts-list {
+    display: flex;
+
+    &__item {
+            display: flex;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            align-items: center;
+    
+            margin-right: 30px;
+        }
+    
+    &__item:nth-last-child(1) {
+            margin-right: 0;
+        }
+    
+    &__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            color: var(--hdr-cntcts-lst);
+    
+            cursor: pointer;
+    
+            transition: color var(--transition);
+        }
+    
+    &__link:hover,
+    &__link:focus {
+            color: var(--accent-txt-cl);
+        }
+    
+    &__icon {
+            fill: currentColor;
+            margin-right: 10px;
+        }
+}
+

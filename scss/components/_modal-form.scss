@@ -1,0 +1,163 @@
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--backdrop);
+
+    transition: opacity var(--transition), visibility var(--transition);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+
+    position: relative;
+    width: 528px;
+    height: 581px;
+    background-color: var(--btn-txt-cl);
+    border-radius: 4px;
+
+    padding: 44px 40px;
+
+    opacity: 1;
+    transition: transform var(--transition), opacity var(--transition);
+}
+
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+}
+
+
+.register-form {
+    text-align: center;
+
+    &__title {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    &__group {
+        margin-bottom: 20px;
+    }
+
+    &__wrap {
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+            }
+    }  
+
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
+        padding-left: 0px;
+
+        }
+
+    &__input,
+    &__message {
+        width: 100%;
+        border: 1px solid var(--modal-border);
+        padding: 11px;
+        padding-left: 42px;
+        border-radius: 4px;
+
+        transition: border-color var(--transition);
+    }
+
+    &__input:hover,
+    &__input:focus-visible {
+        border: 1px solid var(--accent-txt-cl);
+        outline: none;
+    }
+
+    &__input:hover+.register-form__icon,
+    &__input:focus-visible+.register-form__icon {
+        fill: var(--accent-txt-cl);
+    }
+ 
+
+    &__icon {
+        position: absolute;
+        bottom: 11px;
+        left: 12px;
+
+        transition: fill var(--transition) border-color var(--transition);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-txt-cl);
+            border-color: var(--accent-txt-cl);
+            }
+    }
+ 
+    &__message {
+        padding: 12px 16px;
+        height: 120px;
+        resize: none;
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-txt-cl);
+            outline: none;
+            }
+    }
+
+    &__agreement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+.icon-agreement {
+
+    &__form-uncheck {
+            .agreement-form__checkbox:checked+.agreement-form__icon & {
+            opacity: 0;
+    
+            transition: opacity var(--transition);
+            }
+        }
+
+    &__form-check {
+            opacity: 0;
+        
+            fill: var(--btn-txt-cl);
+            background-color: var(--accent-txt-cl);
+        
+            transition: opacity var(--anim-fast);
+        
+            .agreement-form__checkbox:checked+.agreement-form__icon & {
+                opacity: 1;
+            }
+                }
+
+}
+
+
+
+
+
